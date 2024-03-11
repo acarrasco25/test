@@ -1,0 +1,560 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    /* styles the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    background-color: #f0ebf5;
+}
+
+.draft {
+    cursor: pointer;
+}
+
+.center {
+    /* styles the box that holds everything */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    position: relative;
+}
+
+.top-box {
+    margin-top: 0.3%;
+    /* styles the top box */
+    background-color: #ffffff;
+    width: 640px;
+    /* height: 25vh; */
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 10px;
+}
+
+.purply {
+    /* Styles the purple thing at the top */
+    background-color: #673ab7;
+    height: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.top-text {
+    /* styles the heading text */
+    color: black;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 2.5%;
+}
+
+.top-mid-box {
+    /* Styles the box containing the email etc */
+    border-top: 1px solid rgb(218, 220, 224);
+    border-bottom: 1px solid rgb(218, 220, 224);
+}
+
+.email-text {
+    /* Styles the email text itself */
+    font-family: "Roboto", Arial, sans-serif;
+    color: rgb(95, 99, 104);
+    font-weight: 700;
+    font-size: 0.85em;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.email-text-submit {
+    /* Styles the email text itself */
+    font-family: "Roboto", Arial, sans-serif;
+    color: rgb(95, 99, 104);
+    font-weight: 500;
+    font-size: 0.85em;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.top-mid-box a {
+    text-decoration: none;
+}
+
+.blue-text {
+    /* Styles the "switch account" text */
+    color: rgb(26, 115, 232);
+    display: inline-block;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+.top-mid-box img {
+    /* Styles the checkbox cloud img */
+    margin-left: 30%;
+}
+
+.name-text {
+    /* Styles the data sharing info */
+    font-family: "Roboto", Arial, sans-serif;
+    color: rgb(95, 99, 104);
+    margin-left: 5%;
+    margin-top: 0;
+    font-size: 0.9em;
+}
+
+.top-bottom-box p {
+    /* styles the required question info */
+    margin-left: 5%;
+    margin-bottom: 2.5%;
+    color: rgb(217, 48, 37);
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.85em;
+}
+
+.email-box {
+    /* styles the email box */
+    margin-top: 1.5vh;
+    background-color: #ffffff;
+    width: 640px;
+    height: 15vh;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 10px;
+}
+
+.what-email {
+    /* styles the email text */
+    margin-left: 4%;
+    margin-top: 4%;
+    color: black;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.what-email span {
+    /* styles the * */
+    margin-left: 0.3vw;
+    color: rgb(217, 48, 37);
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.checkbox-div {
+    /* styles the div containing the checkbox and its text */
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-top: 4%;
+}
+
+#email-check {
+    /* styles the checkbox */
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 4%;
+    /* margin-top: 3%; */
+    accent-color: #673ab7;
+    cursor: pointer;
+}
+
+#email-check:hover {
+    /* styles the checkbox on hover */
+    box-shadow: 0px 0px 1px 9px #f0ebf5;
+    clip-path: circle(90%);
+}
+
+.check-label-text {
+    font-family: "Roboto", Arial, sans-serif;
+    /* font-weight: 70; */
+    font-size: 0.9em;
+}
+
+.check-label-text span {
+    /* Styles the name in email text */
+    color: rgb(95, 99, 104);
+    font-weight: 700;
+}
+
+.time-box {
+    /* styles the email box */
+    margin-top: 1.5vh;
+    background-color: #ffffff;
+    width: 640px;
+    /* height: 15vh; */
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 10px;
+    accent-color: #673ab7;
+}
+
+.radio-button-div {
+    margin-left: 2%;
+}
+
+.radio-button-div div {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 3%;
+    /* align-items: center; */
+}
+
+#time1,
+#time2,
+#time3 {
+    /* margin-right: 4%; */
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+.explanation-box {
+    /* styles the email box */
+    margin-top: 1.5vh;
+    background-color: #ffffff;
+    width: 640px;
+    height: 15vh;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 10px;
+    font-size: 14;
+}
+
+/* textarea {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    resize: none;
+    margin-left: 4%;
+    margin-top: 2.6%;
+    font-size: 0.95em;
+    font-family: "Roboto",
+        Arial,
+        sans-serif;
+}
+
+textarea:focus {
+    outline: none;
+    border-bottom-width: 2.5px;
+    border-bottom-color: #673ab7;
+} */
+
+textarea {
+    border: none;
+    resize: none;
+    margin-top: 2.6%;
+    margin-left: 4%;
+    font-size: 0.95em;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.specialdiv {
+    margin-left: 4%;
+    margin-right: 4%;
+    border-bottom: 1px solid rgb(218, 220, 224);
+    transform-origin: center;
+    /* transform: scaleX(0);
+    animation-name: savememrcharpentier;
+    animation-duration: 2s; */
+}
+
+.animation {
+    transform: scaleX(0);
+    animation-name: savememrcharpentier;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes savememrcharpentier {
+    0% {
+        transform: scaleX(0);
+        border-bottom: 2px solid #673ab7;
+    }
+
+    100% {
+        transform: scaleX(1);
+        border-bottom: 2px solid #673ab7;
+    }
+}
+
+.radio-button-div label {
+    color: black;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.91em;
+}
+
+.screenshot-box {
+    /* styles the email box */
+    margin-top: 1.5vh;
+    background-color: #ffffff;
+    width: 640px;
+    height: 13vh;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 10px;
+}
+
+.button {
+    margin-left: 4%;
+    width: 5.5vw;
+    display: flex;
+    height: 3.5vh;
+    border: 1px solid rgb(218, 220, 224);
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.required-out-border {
+    border-color: red;
+}
+
+.required-in-border {
+    margin-left: 4%;
+    margin-right: 4%;
+    transform-origin: center;
+    border-bottom: 1px solid red;
+}
+
+.footer-flex {
+    margin-top: 1.2vh;
+    display: flex;
+    flex-direction: row;
+    gap: 29em;
+}
+
+.submit-button {
+    width: 100px;
+    background-color: #673ab7;
+    height: 36px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.clear-form {
+    color: #673ab7;
+    margin: 0;
+    font-size: 0.95em;
+    font-family: "Open Sans", Arial, sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.submit-button p {
+    color: #ffffff;
+    font-size: 0.95em;
+    font-family: "Open Sans", Arial, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    line-height: 8px;
+    font-weight: 500;
+}
+
+
+.forms-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.never {
+    margin-left: -20%;
+    font-size: 12px;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: rgb(133, 130, 130);
+}
+
+.created {
+    font-family: "Roboto", Arial, sans-serif;
+    color: rgb(133, 130, 130);
+    font-size: 12px;
+}
+
+.created a {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+.feedback {
+    position: fixed;
+    left: 11px;
+    top: 910px;
+    cursor: pointer;
+}
+
+.hidden-text {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3.5%;
+}
+
+.hidden-text img {
+    opacity: 0;
+    align-self: center;
+}
+
+#textchange {
+    margin-left: 2%;
+    color: red;
+    font-family: "Roboto", Arial, sans-serif;
+    letter-spacing: .3px;
+    font-size: 12px;
+}
+
+.submit-button:hover {
+    background-color: #7349bd;
+}
+
+.submit-button:active {
+    background-color: #a084d2;
+}
+
+.clear-form a {
+    text-decoration: none;
+    color: #673ab7;
+    margin: 0;
+    font-size: 0.95em;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 500;
+}
+
+.clear-form {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 6px;
+}
+
+.clear-form:hover {
+    background-color: #eae7f8;
+}
+
+.clear-form:active {
+    background-color: #d5cdef;
+}
+
+.button>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.button>div>img {
+    align-self: center;
+    vertical-align: middle;
+    width: 14px;
+}
+
+.screenshot-box a {
+    text-decoration: none;
+}
+
+.button>div>p {
+    color: #1a73e8;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+iframe {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    left: 580px;
+    top: 150px;
+}
+
+.button:hover {
+    background-color: #f8faff;
+}
+
+.button:active {
+    background-color: #dae7fd;
+}
+
+a {
+    text-decoration: none;
+}
+
+.response-text {
+    color: rgb(26, 115, 232);
+    text-decoration: underline;
+    font-family: "Roboto", Arial, sans-serif;
+    margin-left: 5%;
+    font-size: 15px;
+}
+
+
+.open-button {
+    margin-left: 72%;
+    margin-bottom: 3.5%;
+    width: 160px;
+    background-color: #673ab7;
+    height: 36px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.open-button p {
+    color: #ffffff;
+    font-size: 0.90em;
+    font-family: "Open Sans", Arial, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.open-button:hover {
+    background-color: #7349bd;
+}
+
+.open-button:active {
+    background-color: #a084d2;
+}
+
+#email-check:hover {
+    /* styles the checkbox on hover */
+    box-shadow: 0px 0px 1px 9px #f0ebf5;
+    clip-path: circle(90%);
+}
+
+#time1,
+#time2,
+#time3 {
+    /* margin-right: 4%; */
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+#time1:hover,
+#time2:hover,
+#time3:hover {
+    box-shadow: 0px 0px 1px 9px #f0ebf5;
+    clip-path: circle(90%);
+}
+
+
+
+/* For tomorrow: 
+    1. Make responsive: just remove predefined heights and weights and do it naturally using margins etc
+    2. Finish bottom stuff: submit button and text
+    3. Make radio labels on same level as buttons
+*/
