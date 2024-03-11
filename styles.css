@@ -127,7 +127,6 @@ body {
     margin-top: 1.5vh;
     background-color: #ffffff;
     width: 640px;
-    height: 15vh;
     border: 1px solid rgb(218, 220, 224);
     border-radius: 10px;
 }
@@ -219,7 +218,6 @@ body {
     margin-top: 1.5vh;
     background-color: #ffffff;
     width: 640px;
-    height: 15vh;
     border: 1px solid rgb(218, 220, 224);
     border-radius: 10px;
     font-size: 14;
@@ -297,7 +295,6 @@ textarea:focus {
     margin-top: 1.5vh;
     background-color: #ffffff;
     width: 640px;
-    height: 13vh;
     border: 1px solid rgb(218, 220, 224);
     border-radius: 10px;
 }
